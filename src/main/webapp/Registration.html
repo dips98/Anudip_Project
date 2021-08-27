@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap4.6\css\bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet/Navbar.css">
+	<title>Student Registration</title>
+	<style type="text/css">
+	body{
+		margin: 0px;
+		padding: 0px;
+		background-image: url('img/stud4.jpg');
+		background-repeat: no-repeat;
+    	background-size: cover;
+	}
+	.container-sm{
+		/*border: 5px solid black;*/
+		margin: 20px 0px 0px 0px;
+		padding: 0px;
+		width: 40%;
+		height: 100%;
+
+	}
+	.container-sm h1{
+		text-align: center;
+		margin-top: 10px;
+		font-weight: 800;
+	}
+	.container-sm form{
+		width: 110%;
+		height: 100%;
+		text-align: left;
+		border: 5px solid black;
+		border-radius: 20px;
+		margin: 20px 10px 20px 10px;
+		padding: 20px;
+	}
+	input[type=text]:hover, input[type=password]:hover,input[type=number]:hover,
+            input[type=email]:hover {
+                background-color: gray;
+                color: white;
+            }
+	</style>
+</head>
+<body>
+<div class="navbar">
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Gallery.html">Gallary</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="Contact_page.html">Contact Us</a></li>
+			<li><a href="#">Admission</a></li>
+			<li><a href="#">Examination</a></li>
+			<li><a href="img/logo.png"><img src="img/logo.png" style="width:30px;"></a></li>
+			<li><a href="#">Notice</a></li>
+			<li><a href="Staff.html">Staff</a></li>
+			<li><a href="#">Tranportation</a></li>
+			<li><a href="#">Fees Structure</a></li>
+			<li><a href="#">Activities</a></li>
+			<li><a href="#">Hostel</a></li>
+		</ul>
+	</nav>
+	</div>
+	<div class="container-sm">
+		<h1>Student Registration</h1>
+		<form>
+		  <div class="form-row">
+		  	<div class="form-group col-md-2">
+		    	<label for="validationCustom01">Name:</label>
+		    </div>
+		    <div class="form-group col-md-4">
+		    	<input type="text" class="form-control"	placeholder="First Name" required>
+		    </div>
+		    <div class="form-group col-md-3">
+		     	<input type="text" class="form-control" placeholder="Middle Name" required>
+		    </div>
+		    <div class="form-group col-md-3">
+		    	<input type="text" class="form-control" placeholder="Last Name" required>
+		    </div>
+		  </div>
+		  	<div class="form-row">
+		    	<label for="validationCustom02">Email:</label>
+		    	<input type="email" class="form-control" placeholder="Enter email" required>
+		    	<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		  	</div>
+		 	<div class="form-row">
+				<label for="validationCustom03">Password:</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" required>
+			</div>
+			<div class="form-row">
+				<label for="validationCustom04">Confirm Password:</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" required>
+			</div>
+			<div class="form-row">
+				<label for="validationCustom04">Mobile No:</label>
+				<input type="tel" class="form-control" required>
+			</div>
+
+			<div class="form-row form-check">
+		  	<div class="form-group">
+		    	<input type="checkbox" class="form-check-input" id="exampleCheck1">
+		    	<label class="form-check-label" for="validationCustom04">Check me out</label>
+		  	</div>
+		  	</div>
+
+		  <button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+</body>
+</html>

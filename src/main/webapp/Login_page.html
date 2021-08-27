@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>Login Page</title>
+<link rel="stylesheet" type="text/css" href="stylesheet/Navbar.css">
+<style>
+body{
+	margin: 0;
+	padding: 0;
+	background: url("img/login.jpg");
+	background-size: 100%;
+	background-repeat: no_repeat;	
+	font-family: sans-serif;
+	}
+.loginbox{
+	width: 350px;
+	height: 520px;
+	border: 4px groove #fff;
+	border-radius: 10px;
+	color: #ffff;
+	top: 52%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 40px 30px;
+	}
+.loginbox:hover{
+	/*background:black;*/
+	transition: all 1.5s;
+	background-color: rgba(0,0,0,.6);
+	}
+.avatar{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	position: absolute;
+	top: -7%;
+	left: 40%;
+	}
+h3{
+	color: white;
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+	}
+.loginbox p{
+	color: white;
+	margin: 0px 5px 0px 5px;
+	padding: 0;
+	font-weight: bold;
+
+	}
+.loginbox b{
+	color: white;
+	}
+.loginbox input{
+	width: 100%;
+	margin-bottom: 20px;
+	}
+.loginbox input[type="text"],input[type="password"],
+select[name="login type"]
+	{
+	border: none;
+	border-bottom: 2px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size:16px;
+	}
+select[name="login type"]:hover{
+	color: #ffff;
+	background-color: black;
+	background-border: 5px solid #fff;
+	}
+
+.loginbox input[type="submit"],input[type="reset"]
+	{
+	border: none;
+	outline: none;
+	height:40px;
+	background: #fb2525;
+	color:#fff;
+	font-size:18px;
+	border-radius: 20px;
+	}
+.loginbox input[type="submit"]:hover,input[type="reset"]:hover
+	{
+	cursor: pointed;
+	background: #ffc107;
+	color:black;
+	}
+.loginbox a{
+	text-decoration:none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+	}
+.loginbox a:hover
+	{
+	color:#fff;
+	}
+
+</style>
+</head>
+<body>
+<div class="navbar">
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Gallery.html">Gallary</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="Contact_page.html">Contact Us</a></li>
+			<li><a href="#">Admission</a></li>
+			<li><a href="#">Examination</a></li>
+			<li><a href="img/logo.png"><img src="img/logo.png" style="width:30px;"></a></li>
+			<li><a href="#">Notice</a></li>
+			<li><a href="Staff.html">Staff</a></li>
+			<li><a href="#">Tranportation</a></li>
+			<li><a href="#">Fees Structure</a></li>
+			<li><a href="#">Activities</a></li>
+			<li><a href="#">Hostel</a></li>
+		</ul>
+	</nav>
+	</div>
+	<div class="loginbox">
+	<img src="img/avatar.png" class="avatar">
+		<form>
+		<h3>Login Page</h3>
+		<b><center>Samarth College Of<br>Computer Science,Belhe.</center></b>
+   		  <br> <p>Login Type:
+   		   <select name="login type">
+		   <option value="student">Student</option>
+		   <option value="parants">Parants</option>
+		   <option value="staff">Staff</option></select></p>
+		   <br><p>Username:</p>
+		   <input type="text" name="username" placeholder="Enter username" maxlength="40"/>
+		   <p>Password:</p>
+		   <input type="password" name="password" placeholder="Enter password" maxlength="20"/>
+		   <center>
+		   <input type="submit" name="" value="Sign In">
+		   <input type="reset" name="" value="Reset">
+		   <a href="#">Forgot Password</a><br>
+		   <a href="Registration1.html">New User Registration</a></center>
+		</form>
+</div>
+</body>
+</html>
